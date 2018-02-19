@@ -1,0 +1,15 @@
+
+CS 344: Program 5 Notes
+
+- One single file, mypython.py
+- When executed:
+	- Create 3 files in the same directory of script
+		- Different Names (up to you!)
+		- Remains in directory even after execution
+		- Contain exactly 10 random characters,
+			from lowercase alphabet, no spaces
+			(i.e. "hoehdgwkdq")
+		- The eleventh character should be a newline character
+	- Print out the contents of the 3 files
+	- Print out two random integers (range: 1-42)
+		- Then print out their product

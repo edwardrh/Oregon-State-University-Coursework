@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+   <!--
+      Name: Rhea Mae Edwards
+	  Date: October 18th, 2015
+	  Filename: pageOne.html
+   -->
+   <head>
+      <title>Customer Registration</title>
+	  <link rel="stylesheet" type="text/css" href="style2.css" />
+   </head>
+   <body>
+      <header>
+	     <a href="#">My Account</a>
+		 <a href="#">Wish List</a> 
+		 <a href="#">Shopping Cart</a> 
+		 <a href="#">Checkout</a>
+	  </header>
+	  <h1>Art Store</h1>
+	  <nav>
+	     <a href="pageOne.html">Home</a>
+		 <a href="#">About Us</a> 
+		 <a href="#">Art Works</a> 
+		 <a href="#">Artists</a> 
+	  </nav>
+	  <div id="main">
+	     <h2>Customer Registration</h2>
+		 <form method="get" action="http://web.engr.oregonstate.edu/~schutfoj/cs290/process.php">
+		 <fieldset>
+		 <h3>1. User Info</h3>
+		 <hr>
+		 <table style="margin-top: 2%; margin-bottom: 1%;"><tr>
+		 <td>
+		 <label><strong>First Name</strong></label><br>
+		 <input type="text" name="first name"/>
+		 </td>
+		 <td>
+		 <label><strong>Last Name</strong></label><br>
+		 <input type="text" name="last name"/>
+		 </td>
+		 </tr></table>
+		 <label><strong>Email</strong></label><br>
+		 <input type="email" name="email" placeholder="format for email xxx@yyy.zzz" />
+		 <table style="margin-top: 2%; margin-bottom: 1%;"><tr>
+		 <td>
+		 <label><strong>Password</strong></label><br>
+		 <input type="password" name="pass1" placeholder="at least 8 characters" />
+		 </td>
+		 <td>
+		 <label><strong>Password Repeat</strong></label><br>
+		 <input type="password" name="pass2" placeholder="at least 8 characters" />
+		 </td>
+		 </tr></table>
+		 <h3>2. Location</h3>
+		 <hr>
+		 <label><strong>Address</strong></label><br>
+		 <input type="text" name="address" />
+		 <table style="margin-top: 2%; margin-bottom: 1%;"><tr>
+		 <td>
+		 <label><strong>City</strong></label><br>
+		 <input type="text" name="city"/>
+		 </td>
+		 <td>
+		 <label><strong>State</strong></label><br>
+		 <input type="text" name="state"/>
+		 </td>
+		 <td>
+		 <label><strong>Zip</strong></label><br>
+		 <input type="text" name="zip"/>
+		 </td>
+		 </tr></table>
+		 <table style="margin-top: 2%; margin-bottom: 2%;"><tr>
+		 <td>
+		 <label><strong>Phone</strong></label><br>
+		 <input type="tel" name="phone" placeholder="NNN-NNN-NNNN" />
+		 </td>
+		 <td>
+		 <label><strong>Country</strong></label><br>
+		 <select name="country">
+		    <option>Canada</option>
+			<option>France</option>
+			<option>Brazil</option>
+			<option>United States</option>
+		 </select>
+		 </td>
+		 </tr></table>
+		 <label><strong>Continent</strong></label><br>
+		 <input type="radio" name="where" value="1">North America<br>
+		 <input type="radio" name="where" value="2">Europe<br>
+		 <input type="radio" name="where" value="3">South America<br>
+		 <h3>3. Personal Details</h3>
+		 <hr>
+		 <table style="margin-top: 2%; margin-bottom: 2%;"><tr>
+		 <td>
+		 <label><strong>Birth Day</strong></label><br>
+		 <input type="month" name="birthday" />
+		 </td>
+		 <td>
+		 <label><strong>Favorite Color</strong></label><br>
+		 <input type="color" name="favorite" />
+		 </td>
+		 </tr></table>
+		 <label><strong>Interest in Art</strong></label><br>
+		 Minimal
+		 <input type="range" min="0" max="10" step="1" name="interest" />
+		 Love it!
+		 <h3>4. All Done</h3>
+		 <hr>
+		 <input type="checkbox" name="accept" />
+		 <label><strong>I agree to the <a href="#">Terms of the Site</a></strong></label><br>
+		 <button type="submit">
+		    <img src="start/images/button_ok.png" alt="okay" />
+			Sign my up!
+		 </button>
+		 </fieldset>
+		 </form>
+	  </div>
+	  <footer>
+      All images are copyright to their owners. This is just a 
+	  hypothetical site &#169; 2014 Copyright Art Store
+      </footer>
+   </body>
+</html>

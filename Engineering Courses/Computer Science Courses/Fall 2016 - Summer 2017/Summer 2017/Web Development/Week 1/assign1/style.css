@@ -1,0 +1,31 @@
+tbody tr th {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.outer-content {
+	width: 75%;
+	background-color: pink;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.inner-content {
+	background-color: blue;
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	color: grey;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.purple {
+	background-color: purple;
+}
+
+table, th, td {
+   border: 1px solid black;
+}

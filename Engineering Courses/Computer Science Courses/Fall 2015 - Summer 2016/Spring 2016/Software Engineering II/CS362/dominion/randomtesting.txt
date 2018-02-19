@@ -1,0 +1,17 @@
+- Explain the development of random testers.
+	- Improvements in coverage.
+	- Efforts to check correctness by breaking the code.
+
+- Discuss how much cards manage to cover.
+	- Was there code failed to cover? Why?
+
+- For at least one card, tester achieve 100% 
+  statement and branch coverage.
+	- Document this.
+		- How long did test had to run? 
+		  (No more that 5 mins)
+
+- Compare coverage to unit tests.
+	- Discuss tests differ in ability to detect faults
+	- Which test had higher coverage? Unit or random?
+	- Which test better fault detection cabaility?

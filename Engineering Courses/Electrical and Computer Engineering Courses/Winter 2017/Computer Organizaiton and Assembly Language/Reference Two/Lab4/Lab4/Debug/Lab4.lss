@@ -1,0 +1,7 @@
+
+AVRASM ver. 2.2.6  C:\Users\RheaMae\Documents\Oregon State University\Courses\Winter 2017\ECE 375\Lab4\Lab4\main.asm Tue Feb 07 21:31:04 2017
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
+C:\Users\RheaMae\Documents\Oregon State University\Courses\Winter 2017\ECE 375\Lab4\Lab4\main.asm(19): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
+C:\Users\RheaMae\Documents\Oregon State University\Courses\Winter 2017\ECE 375\Lab4\Lab4\main.asm(91): error: lcd_command: Unknown instruction or macro
+C:\Users\RheaMae\Documents\Oregon State University\Courses\Winter 2017\ECE 375\Lab4\Lab4\main.asm(91): error: syntax error, unexpected '('

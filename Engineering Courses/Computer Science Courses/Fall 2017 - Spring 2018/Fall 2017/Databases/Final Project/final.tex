@@ -1,0 +1,1430 @@
+\documentclass[letterpaper,10pt,onecolumn,compsoc]{IEEEtran}
+%draftclsnofoot
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{tocloft}
+\usepackage{color}
+\usepackage{array}
+\usepackage{dingbat}
+\usepackage{graphicx}
+
+\geometry{margin=0.75 in}
+
+\setlength{\parskip}{1em}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+\title{-\\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\~ \\ ~ \\Final Project:\\Planning for Endless Adventures}
+\author{Rhea Mae V. Edwards\\ ~ \\CS 340\\Fall 2017}
+
+\begin{document}
+
+%----------------- TITLE PAGE -----------------%
+\maketitle
+
+\newpage
+
+%----------------- TABLE OF CONTENTS -----------------%
+
+\tableofcontents
+
+\newpage
+
+%----------------- INTRODUCTION -----------------%
+\section{Introduction}
+
+% Overview of topic
+% Introduce topic
+
+\noindent
+This final project database driven website will be created around the idea of a basic travel plan for adventurous travelers to use and play around with to their desires. The purpose of developing this type of database is to help its users figure out and organize travel plans for potential trip around the world, or any other places or destinations their imagination can take them. There are a great variety of travel plans one can accomplish, from simple to more complex, where a database would be useful to help organize such great amount and jumbled up ideas.
+
+%----------------- PROJECT PLANS -----------------%
+\section{Project Plans}
+
+%----------------- DATABASE OUTLINE -----------------%
+
+\subsection{Database Outline}
+
+% Describe, IN DETAIL...
+% 	- Entites
+% 	- Properties
+% 	- Relationships
+% ER Diagram and Schema wll be graded based on if they match this outline description of how the entites and relationships work
+
+\subsubsection{Entities}
+
+\noindent
+Each of these entities will have their associated id number as additional attribute, indicating that there is a difference between each variant.
+
+\begin{enumerate}
+
+\item 
+\textbf{Travelers} (\textit{traveler})
+\\ ~ \\ They will have...
+\begin{itemize}
+	\item first names (\textit{fname})
+	\item last names (\textit{lname})
+	\item phone numbers (\textit{phone})
+	\item current happiness level on a scale from 1 to 10 in regards to their trip planning (\textit{happiness})
+\end{itemize}
+All of these attributes will have to be required for the user to enter. Ideally, each traveler should have a first name, last name, and a phone number in order to travel. Travelers may have the same names and phone numbers (a phone number that can contact a number of travelers). Optional and just fun in order to get the travels excited and motivated to plan for a potential or actual adventure, there is will be a spot in the database for the traveler to indicate their current happiness level on a scale from 1 to 10, where they will just input a numeric value to state their perceived level.
+\\
+
+\item 
+\textbf{Destinations} (\textit{destination})
+\\ ~ \\ There are many locations a traveler can travel to, consisting of...
+\begin{itemize}
+	\item towns (\textit{town})
+	\item cities (\textit{city})
+	\item states (\textit{state})
+	\item countries (\textit{country})
+\end{itemize}
+Either of these attributes are optional, but a travel will have to choose at least one of these destination types, being either a town, city, state, or country at minimum. All of these destination types will be stated down as names within a travel plan.
+\\
+
+\item 
+\textbf{Trip Duration} (\textit{trip\_ duration})
+\\ ~ \\ The length of a trip can vary, consisting of a...
+\begin{itemize}
+	\item number of days the trip will be (\textit{days})
+	\item beginning travel date (\textit{begin})
+	\item ending travel date (\textit{end})
+	\item time of a day a trip can start (\textit{stime})
+	\item time of a day a trip can end (\textit{etime})
+\end{itemize}
+For this simple travel planner database, each adventure's length can be described with the number of days a traveler is planning on being on a trip, a set of a beginning travel date and ending travel date, or just a beginning travel date where the adventure is not intended to end. The traveler will have to choose one of these descriptors for the length of time there trip will take or at least when it will start. Optionally, the traveler can input the time of day for a beginning travel date or an ending date, depending how detailed the travel will like to be.
+\\
+
+\newpage
+
+\item 
+\textbf{Activities} (\textit{activity})
+\\ ~ \\ There are a variety of activities a traveler can pursue when traveling, which can consist of...
+\begin{itemize}
+	\item the name of the activity (\textit{aname})
+	\item either being a leisure or more strenuous activity (\textit{energy})
+	\item the length of time the activity can take in hours (\textit{length})
+	\item if an activity will cost money to do or not (\textit{cost})
+\end{itemize}
+A traveler can choose the option to add an activity to their travel or not, it is not required to be started. But if an activity is desired, the name of the activity is required. The other attributes of the activity might not be known at the time, so they are not required in order to add an activity into the database.
+
+\end{enumerate}
+
+\subsubsection{Relationships}
+
+\begin{enumerate}
+
+\item 
+\textbf{Travelers \textit{must be going to at one} destination} (\textit{going})
+\\ ~ \\
+This is a many-to-many relationship, because travelers can be going to many destinations and at least one, and a destination can be traveled by many travelers, but a destination does not have to be traveled.
+\\
+
+\item 
+\textbf{Destinations \textit{must be associated to at least a single} trip duration} (\textit{associated})
+\\ ~ \\
+This is a one-to-many relationship, where a destination can be visited zero to multiple times, meaning multiple trip durations, but there can only be one type of trip duration, where a trip duration can only be associated with one destination. 
+\\
+For example, you can visit a single destination multiple times, but you cannot visit two or more destinations at the same time.
+\\
+
+\item 
+\textbf{Travelers \textit{can pursue many} activities} (\textit{purses})
+\\ ~ \\
+This is a many-to-many relationship, because many travelers can pursue many types of activities, but an activity does not have to pursued by a traveler, and a traveler does not have to do an activity.
+\\
+
+\item 
+\textbf{Activities \textit{can be done at many} destinations} (\textit{done\_ at})
+\\ ~ \\
+This is a many-to-many relationship, because many types of activities can be done at many destinations and many destinations can inspire many activities, but an activity does not have to be at a destination and likewise, a destination does not need to have an activity.
+
+\end{enumerate}
+
+\newpage
+
+%----------------- ER DIAGRAM -----------------%
+\subsection{ER Diagram}
+
+% Should match the database outline
+
+\bigskip
+\includegraphics[scale=.7]{er_diagram.png}
+% \includegraphics[width=\textwidth]{er_diagram.png}
+
+%----------------- SCHEMA -----------------%
+\subsection{Schema}
+
+% Should follow the database outline exactly
+
+\bigskip
+\includegraphics[scale=.67]{schema.PNG}
+% \includegraphics[width=\textwidth]{schema.PNG}
+
+\newpage
+
+%----------------- QUERIES -----------------%
+\section{Queries}
+
+\subsection{Data Definition Queries}
+
+% Will be used to generate database
+% Most likely only will be ran once, and that will be manually by you
+% Not the queries that are used to do things like add, remove, or view data in your site
+% Going to be queries to create tabels and foreign keys
+% All data types should be appropriate
+% Foreign keys should exist and be corret, and match database outline
+
+\begin{verbatim}
+-- Traveler Entity Table
+
+CREATE TABLE 'traveler'(
+	'id' int(11) AUTO_INCREMENT NOT NULL,
+	'fname' varchar(255) NOT NULL,
+	'lname' varchar(255) NOT NULL,
+	'phone' varchar(255) NOT NULL,
+	'happiness' TINYINT,
+	PRIMARY KEY('id')
+)ENGINE=InnoDB;
+
+-- Destination Entity Table
+
+CREATE TABLE 'destination'(
+	'id' int(11) AUTO_INCREMENT NOT NULL,
+	'town' varchar(255),
+	'city' varchar(255),
+	'state' varchar(255),
+	'country' varchar(255),
+	PRIMARY KEY('id'),
+	UNIQUE KEY('town','city','state','country')
+)ENGINE=InnoDB;
+
+-- Trip Duration Entity Table
+
+CREATE TABLE 'trip_duration'(
+	'id' int(11) AUTO_INCREMENT NOT NULL,
+	'days' INT,
+	'begin' DATE,
+	'end' DATE,
+	'stime' TIME,
+	'etime' TIME,
+	'destination_id' INT,
+	PRIMARY KEY('id'),
+	FOREIGN KEY('destination_id') REFERENCES 'destination'('id'),
+)ENGINE=InnoDB;
+
+-- Activity Entity Table
+
+CREATE TABLE 'activity'(
+	'id' int(11) AUTO_INCREMENT NOT NULL,
+	'aname' varchar(255),
+	'energy' varchar(255),
+	'length' INT,
+	'cost' varchar(255),
+	PRIMARY KEY('id'),
+	UNIQUE KEY('aname')
+)ENGINE=InnoDB;
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+-- Done At Relationship Table
+
+CREATE TABLE 'done_at'(
+	'activity_id' INT,
+	'destination_id' INT,
+	FOREIGN KEY('activity_id') REFERENCES 'activity'('id'),
+	FOREIGN KEY('destination_id') REFERENCES 'destination'('id'),
+	PRIMARY KEY('activity_id','destination_id')
+)ENGINE=InnoDB;
+
+-- Purses Relationship Table
+
+CREATE TABLE 'pursues'(
+	'traveler_id' INT,
+	'activity_id' INT,
+	FOREIGN KEY('traveler_id') REFERENCES 'traveler'('id'),
+	FOREIGN KEY('activity_id') REFERENCES 'activity'('id'),
+	PRIMARY KEY('traveler_id','activity_id')
+)ENGINE=InnoDB;
+
+-- Going Relationship Table
+
+CREATE TABLE 'going'(
+	'traveler_id' INT,
+	'destination_id' INT,
+	FOREIGN KEY('traveler_id') REFERENCES 'traveler'('id'),
+	FOREIGN KEY('destination_id') REFERENCES 'destination'('id'),
+	PRIMARY KEY('traveler_id','destination_id')
+)ENGINE=InnoDB;
+\end{verbatim}
+
+\subsection{Data Manipulation Queries}
+
+% Going to be queries that website uses to let users interact with data
+% The things that the data in your forms are being submitted to
+% Anything a variable that you expect the user to fill in square braces
+% For example...
+% SELECT salary FROM employee WHERE salary > [salaryInput];
+% Only want to see SQL here
+% Do not inclue any JavaScript or PHP used to process that data here
+
+\subsubsection{Insertion Queries}
+
+\begin{verbatim}
+-- Inserting into the traveler Table
+
+INSERT INTO traveler (fname, lname, phone, happiness) 
+VALUES ("[fnameInput]", "[lnameInput]", "[phoneInput]", "[happinessInput]");
+
+-- Inserting into the destination Table
+
+INSERT INTO destination (town, city, state, country) 
+VALUES ("[townInput]", "[cityInput]", "[stateInput]", "[countryInput]");
+
+INSERT INTO destination (town, state, country) 
+VALUES ("[townInput]", "[stateInput]", "[countryInput]");
+
+INSERT INTO destination (city, state, country) 
+VALUES ("[cityInput]", "[stateInput]", "[countryInput]");
+
+INSERT INTO destination (town, country) 
+VALUES ("[townInput]", "[countryInput]");
+
+INSERT INTO destination (city, country) 
+VALUES ("[cityInput]", "[countryInput]");
+
+INSERT INTO destination (state, country) 
+VALUES ("[stateInput]", "[countryInput]");
+
+INSERT INTO destination (city, state) 
+VALUES ("[cityInput]", "[stateInput]");
+
+INSERT INTO destination (town, state) 
+VALUES ("[townInput]", "[stateInput]");
+
+INSERT INTO destination (town) 
+VALUES ("[townInput]");
+
+INSERT INTO destination (city) 
+VALUES ("[cityInput]");
+
+INSERT INTO destination (state) 
+VALUES ("[stateInput]");
+
+INSERT INTO destination (country) 
+VALUES ("[countryInput]");
+
+-- Inserting into the trip_duration Table
+
+INSERT INTO trip_duration (days, begin, end, stime, etime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]");
+
+INSERT INTO trip_duration (days, begin, end, etime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[etimeInput]");
+
+INSERT INTO trip_duration (days, begin, end, stime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]");
+
+INSERT INTO trip_duration (begin, end, stime, etime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]");
+
+INSERT INTO trip_duration (days, begin, stime) 
+VALUES ("[daysInput]", "[beginInput]", "[stimeInput]");
+
+INSERT INTO trip_duration (days, begin, end) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]");
+
+INSERT INTO trip_duration (begin, end, etime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[etimeInput]");
+
+INSERT INTO trip_duration (begin, end, stime) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]");
+
+INSERT INTO trip_duration (begin, stime) 
+VALUES ("[daysInput]", "[beginInput]", "[stimeInput]");
+
+INSERT INTO trip_duration (begin, end) 
+VALUES ("[daysInput]", "[beginInput]", "[endInput]");
+
+INSERT INTO trip_duration (days, begin) 
+VALUES ("[daysInput]", "[beginInput]");
+
+INSERT INTO trip_duration (days) 
+VALUES ("[daysInput]");
+
+INSERT INTO trip_duration (begin) 
+VALUES ("[beginInput]");
+
+-- Inserting data into the trip_duration table using subqueries to look up data as needed
+
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, days, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id,  begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+
+INSERT INTO trip_duration (destination_id, begin, end, stime, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, etime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id,  begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";	
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, stime) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin, end) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, days) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", country="[countryInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]", country="[countryInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]", state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE town="[townInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE city="[cityInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE state="[stateInput]";
+	
+INSERT INTO trip_duration (destination_id, begin) 
+	SELECT id, "[daysInput]", "[beginInput]", "[endInput]", "[stimeInput]", "[etimeInput]" 
+	FROM destination 
+	WHERE country="[countryInput]";
+
+-- Inserting into the activity Table
+
+INSERT INTO activity (aname, energy, length, cost) 
+VALUES ("[anameInput]", "[energyInput]", "[lengthInput]", "[costInput]");
+
+INSERT INTO activity (aname, energy, length) 
+VALUES ("[anameInput]", "[energyInput]", "[lengthInput]");
+
+INSERT INTO activity (aname, energy, cost) 
+VALUES ("[anameInput]", "[energyInput]", "[costInput]");
+
+INSERT INTO activity (aname, length, cost) 
+VALUES ("[anameInput]", "[lengthInput]", "[costInput]");
+
+INSERT INTO activity (aname, energy) 
+VALUES ("[anameInput]", "[energyInput]");
+
+INSERT INTO activity (aname, length) 
+VALUES ("[anameInput]", "[lengthInput]");
+
+INSERT INTO activity (aname, cost) 
+VALUES ("[anameInput]", "[costInput]");
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+INSERT INTO activity (aname) 
+VALUES ("[anameInput]");
+
+-- Inserting data into the done_at table using subqueries to look up data as needed
+
+INSERT INTO done_at (activity_id, destination_id) 
+	VALUES(
+	(SELECT id FROM activity WHERE aname="[anameInput]", energy="[energyInput]", 
+	 length="[lengthInput]", cost="[costInput]"), 
+	(SELECT id FROM destination WHERE town="[townInput]" AND city="[cityInput]" AND 
+	 state="[stateInput]" AND country="[countryInput]")
+	);
+
+-- Inserting data into the pursues table using subqueries to look up data as needed
+
+INSERT INTO done_at (traveler_id, activity_id) 
+	VALUES(
+	(SELECT id FROM traveler WHERE fname="[fnameInput]" AND lname="[lnameInput]" AND 
+	 phone="[phoneInput]" AND happiness="[happinessInput]"), 
+	(SELECT id FROM activity WHERE aname="[anameInput]", energy="[energyInput]", 
+	 length="[lengthInput]", cost="[costInput]")
+	);
+
+-- Inserting data into the going table using subqueries to look up data as needed
+
+INSERT INTO done_at (traveler_id, destination_id) 
+	VALUES(
+	(SELECT id FROM traveler WHERE fname="[fnameInput]" AND lname="[lnameInput]" AND 
+	 phone="[phoneInput]" AND happiness="[happinessInput]"), 
+	(SELECT id FROM destination WHERE town="[townInput]" AND city="[cityInput]" AND 
+	 state="[stateInput]" AND country="[countryInput]")
+	);
+\end{verbatim}
+
+\subsubsection{Drop Queries}
+
+\begin{verbatim}
+-- Dropping the traveler Table
+
+DROP TABLE traveler;
+
+-- Dropping the destination Table
+
+DROP TABLE destination;
+
+-- Dropping the trip_duration Table
+
+DROP TABLE trip_duration;
+
+-- Dropping the activity Table
+
+DROP TABLE activity;
+
+-- Dropping the done_at Table
+
+DROP TABLE done_at;
+
+-- Dropping the pursues Table
+
+DROP TABLE pursues;
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+-- Dropping the going Table
+
+DROP TABLE going;
+\end{verbatim}
+
+\subsubsection{Selection Queries}
+
+\begin{verbatim}
+With these selection queries, what the user wants to select can to altered where the 
+user does not have to select all of the attributes in a table, and also for the 
+WHERE condition, determining what conditions and filtration they want their selection 
+to display to be shown, can also be reduced in what is written below, where these 
+statements below have WHERE conditions for every attribute in a table, with the 
+possibility of choosing by its id, which cannot also be the case if desired.
+
+-- Selecting from the traveler Table
+
+SELECT fname, lname, phone, happiness FROM traveler 
+WHERE fname="[fnameInput]" AND lname="[lnameInput]" AND phone="[phoneInput]" 
+AND happiness="[happinessInput]";
+
+-- Selecting from the destination Table
+
+SELECT town, city, state, country FROM destination 
+WHERE town="[townInput]" AND city="[cityInput]" AND state="[stateInput]" 
+AND country="[countryInput]";
+
+-- Selecting from the trip_duration Table
+
+SELECT days, begin, end, stime, etime FROM trip_duration 
+WHERE days="[daysInput]" AND begin="[beginInput]" AND end="[endInput]" AND 
+stime = "[stimeInput]" AND etime="[etimeInput]";
+
+-- Selecting from the activity Table
+
+SELECT aname, energy, length, cost FROM activity 
+WHERE aname="[anameInput]" AND energy="[energyInput]" AND
+length="[lengthInput]" AND cost="[costInput]";
+\end{verbatim}
+
+\subsubsection{Deletion Queries}
+
+\begin{verbatim}
+For the deletion queries, AND or OR can be use in the WHERE condition, 
+and in regards to the WHERE condition, the combination of the attributes 
+in question can vary depending on the search of the user, in addition with 
+the possibility of choosing by its id. 
+
+Below, these deletion queries show all of the attributes having a condition 
+being connected with the keyword AND, which can be altered and varied with 
+the keyword OR or depending on the wanted selection for deletion.
+
+-- Deleting from the traveler Table
+
+DELETE FROM traveler 
+WHERE fname="[fnameInput]" AND lname="[lnameInput]" AND phone="[phoneInput]" 
+AND happiness="[happinessInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+-- Deleting from the destination Table
+
+DELETE FROM destination 
+WHERE town="[townInput]" AND city="[cityInput]" AND state="[stateInput]" 
+AND country="[countryInput]";
+
+-- Deleting from the trip_duration Table
+
+DELETE FROM trip_duration 
+WHERE days="[daysInput]" AND begin="[beginInput]" AND end="[endInput]" AND 
+stime = "[stimeInput]" AND etime="[etimeInput]";
+
+-- Deleting from the activity Table
+
+DELETE FROM activity 
+WHERE aname="[anameInput]" AND energy="[energyInput]" AND
+length="[lengthInput]" AND cost="[costInput]";
+\end{verbatim}
+
+\subsubsection{Update Queries}
+
+\begin{verbatim}
+For the update queries, AND or OR can be use in the WHERE condition, 
+and in regards to the WHERE condition, the combination of the attributes 
+in question can vary depending on the search of the user, in addition with 
+the possibility of choosing by its id. 
+
+Below, these update queries show all of the attributes having a condition 
+being connected with the keyword AND, which can be altered and varied with 
+the keyword OR or depending on the wanted selection for deletion.
+
+-- Updating the traveler Table
+
+UPDATE traveler 
+SET fname="[fnameInput]", lname="[lnameInput]", phone="[phoneInput]", 
+happiness="[happinessInput]" 
+WHERE fname="[fnameInput]" AND lname="[lnameInput]" AND phone="[phoneInput]" 
+AND happiness="[happinessInput]";
+
+-- Updating the destination Table
+
+UPDATE destination 
+SET town="[townInput]", city="[cityInput]", state="[stateInput]", 
+country="[countryInput]" 
+WHERE town="[townInput]" AND city="[cityInput]" AND state="[stateInput]" 
+AND country="[countryInput]";
+
+-- Updating the trip_duration Table
+
+UPDATE trip_duration 
+SET days="[daysInput]", begin="[beginInput]", end="[endInput]", 
+stime = "[stimeInput]", etime="[etimeInput]" 
+WHERE days="[daysInput]" AND begin="[beginInput]" AND end="[endInput]" AND 
+stime = "[stimeInput]" AND etime="[etimeInput]";
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+-- Updating the activity Table
+
+UPDATE activity 
+SET aname="[anameInput]", energy="[energyInput]", length="[lengthInput]", 
+cost="[costInput]" 
+WHERE aname="[anameInput]" AND energy="[energyInput]" AND
+length="[lengthInput]" AND cost="[costInput]";
+\end{verbatim}
+
+%----------------- MORE NOTES ABOUT THE WEBSITE -----------------%
+
+% WEBSITE FUNTIONALITY
+
+% Possible to add data to every table and view data from every table
+% Generally not appropriate to have only a single query that joins all tables and displays them
+
+% When dealing with relationships, you cannot expect the user to manually type any data
+% Allow user to select things to relate to each other via drop down menus or some other UI element where the user picks from existing items to add them to a relationship
+% When picking items, you should display the name that makes the most sense to the user, very likely not the primary key
+
+% Possible to both add and remove things from relationships
+
+% STYLE
+
+% Easy to navigate
+% Not expecting CSS, but tabular sata should be displayed in tables and form elements, being resonably grouped
+% Write-Up should be well formatted with queries that are easy to read and commented if they are complex
+
+%----------------- REFERENCES -----------------%
+
+\iffalse
+\begin{thebibliography}{1}
+
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{URL}
+
+\end{thebibliography}
+\fi
+
+\end{document}
+

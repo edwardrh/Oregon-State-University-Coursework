@@ -1,0 +1,63 @@
+<h1>Plan to Exercise!</h1>
+	<form>
+		<fieldset>
+			<legend><strong>New Exercise</strong></legend>
+			<label for="name">Name of Exercise: </label>
+			<br>
+			<input type="text" name="name" id="name">
+			<br>
+			<label for="reps">Repetitions: </label>
+			<br>
+			<input type="number" name="reps" id="reps">
+			<br>
+			<label for="weight">Weight: </label>
+			<br>
+			<input type="number" name="weight" id="weight">
+			<p>Measurement:
+			<br>
+			<label>
+				<input type="radio" name="measurement" value="1" />Pounds (lbs)</label>
+				<br>
+			<label>
+				<input type="radio" name="measurement" value="0" />Kilograms (kgs)</label>
+			</p>
+			<label for="date">Complete By (yyyy-mm-dd): </label>
+			<br>
+			<input type="text" name="date" id="date">
+			<br>
+			<br>
+			<input type="submit" id="workoutSubmit">
+		</fieldset>
+	</form>
+	<h2>Planner:</h2>
+	<table id="title">
+		<tr>
+			<th>Name |</th>
+			<th>Repetitions |</th>
+			<th>Weight |</th>
+			<th>Measurement |</th>
+			<th>Date</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</table>
+	<br>
+	<table id="workout">
+		<tr>
+			<form>
+					<span id="entry"></span>
+					<button type="submit" id="updateSubmit">Update</button>
+					<button type="submit" id="deleteSubmit">Delete</button>
+			</form>
+		</tr>
+	</table>
+	<div>
+		<span id="name1"></span>
+		<span id="reps1"></span>
+		<span id="weight1"></span>
+		<span id="measurement1"></span>
+		<span id="date1"></span>
+	</div>
+	<p>
+	<i>Note</i>: Add <i>/reset-table</i> to URL to reset plan.
+	</p>

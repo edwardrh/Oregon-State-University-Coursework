@@ -1,0 +1,120 @@
+\documentclass[letterpaper,10pt,onecolumn]{IEEEtran}
+%draftclsnofoot
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\geometry{margin=0.75 in}
+
+\setlength{\parskip}{1em}
+
+\title{-\\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ Assignment 1 Report}
+\author{Rhea Mae V. Edwards\\ ~ \\CS 472\\Fall 2017}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+%----------------- Question 1 -----------------%
+\section{\textbf{Architecture vs Organization}}
+
+\noindent
+\textit{Describe the difference between architecture and organization.}
+
+\noindent
+Architecture is better described as the programmer view when it comes to computer architecture, whereas organization is a concept better viewed as the physical implementation of the subject. Organization has its individual components such as gates, and architecture is more abstract. Overall, the concept of architecture versus organization, can be related to the idea of firmware versus hardware.
+
+%----------------- Question 2 -----------------%
+\section{\textbf{Endianness}}
+
+\noindent
+\textit{Describe the concept of endianness. What common platforms use what endianness?}
+
+\noindent
+The concept of endianness involves "the order of the bytes in multi-byte data types, such as int or float" [1]. There two types of formats that represent this concept of endianness, big-endian and little-endian depending on the order of the representation of the values in mind [2].
+With common platforms, such as Windows, use big-endian, whereas common platforms on UNIX/Linux, use little-endian [3].
+
+%----------------- Question 3 -----------------%
+\section{\textbf{IEEE 754 Floating Point}}
+
+\noindent
+\textit{Give the IEEE 754 floating point format for both single and double precision.}
+
+\noindent
+\begin{tabular}{ |c|c|c| }
+	\hline
+	S & Exponent & Fraction \\
+	\hline
+\end{tabular} 
+
+\noindent
+$ x = (-1)^s \times (1 + Fraction) \times 2^{ Exponent - Bias} $
+
+\noindent
+For single-precision... Exponent = 8 bits, Fraction = 23 bits \\
+For double-precision... Exponent = 11 bits, Fraction = 52 bits \\
+And for both... Sign = 1 bit
+
+%----------------- Question 4 -----------------%
+\section{\textbf{Memory Hierarchy}}
+
+\iffalse
+\noindent
+\fi
+
+\noindent
+\textit{Describe the concept of the memory hierarchy. What levels of the hierarchy are present on flip.engr.oregonstate.edu?}
+
+\noindent
+The memory hierarchy consists of a layer of levels. As you move up the hierarchy, usually the size increases, allowing more space for additional memory, and often the cost of each level tends to be cheaper also. Some of the levels include registers, the smallest level in the hierarchy, last level cache, main memory, and tertiary storage.
+
+%----------------- Question 5 -----------------%
+\section{\textbf{Streaming SIMD Instruction}}
+
+\iffalse
+\noindent
+\fi
+
+\noindent
+\textit{What streaming SIMD instruction levels are present on flip.engr.oregonstate.edu?}
+
+\noindent
+% Answer 
+
+
+\newpage
+
+\begin{thebibliography}{3}
+
+\bibitem{first}
+B. Reese, T. Honermann. (2017). 
+\textit{Pre-defined Compiler Macros} 
+. [Online]. Available: 
+\\\url{https://sourceforge.net/p/predef/wiki/Endianness/}
+
+\bibitem{second}
+(2017). 
+\textit{Endianness} 
+. [Online]. Available: 
+\\\url{https://en.wikipedia.org/wiki/Endianness}
+
+\bibitem{third}
+Progress Software Corporation. (2017). 
+\textit{WHAT PLATFORMS ARE BIG OR LITTLE ENDIAN?} 
+. [Online]. Available: 
+\\\url{https://knowledgebase.progress.com/articles/Article/8566}
+
+\iffalse
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{url}
+\fi
+
+\end{thebibliography}
+
+\end{document}
+

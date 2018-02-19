@@ -1,0 +1,130 @@
+\documentclass[letterpaper,10pt,onecolumn]{IEEEtran}
+%draftclsnofoot
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\geometry{margin=0.75 in}
+
+\setlength{\parskip}{1em}
+
+\title{-\\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ Assignment 2 Report}
+\author{Rhea Mae V. Edwards\\ ~ \\CS 472\\Fall 2017}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+%-------------------------- Part 1 --------------------------%
+\section{\textbf{Implement frexp Function}}
+
+\noindent
+
+\begin{itemize}
+	\item Implement double form of frexp
+		\begin{itemize}
+			\item See man pages for details of implementation
+			\item Your version of funcion, should work identically to supplied version
+			\item Feel free to use example program from man page as a test case
+		\end{itemize}
+	\item Must use bitshifts and masking to do this
+	\item Should define macros that defines masks and shifts you'll need, and macros which extract the exponent, the order bits of the mantissa, and the low order bits of the mantissa
+	\item For instance...
+		\begin{itemize}
+			\item[•] 
+				\begin{verbatim}
+				
+				#define F64_EXP_MAX
+				
+				#define F64_EXP_MASK 
+				#define F64_EXP_SHIFT
+				#define F64_GET_EXP(fp)
+
+				#define F64_MANT_MASK
+				#define F64_MANT_SHIFT
+				#define F64_GET_MANT_HIGH(fp)
+				#define F64_GET_MANT_LOW(fp)
+
+				#define F64_EXP_BIAS
+				#define F64_SET_EXP 
+ 
+				#include <stdio.h>
+				#include <stdlib.h>
+				#include <unistd.h>
+				#include <string.h>
+				\end{verbatim}
+		\end{itemize}
+\end{itemize}
+
+%-------------------------- Part 2 --------------------------%
+\section{\textbf{Floating Point Operations}}
+
+\noindent
+
+\begin{itemize}
+	\item Implement following floating point operations in software:
+		\begin{itemize}
+			\item Addition
+			\item Subtraction
+			\item Multiplication
+			\item Division
+			\item Square Root
+		\end{itemize}
+	\item For each operation...
+		\begin{itemize}
+			\item[-] Compare run time in cycles to the FPU based implementation (in writing)
+			\begin{itemize}
+				\item[-] Likely need rdtsc instruction
+				\begin{itemize}
+					\item[-] Timing discussed in class
+				\end{itemize} 
+			\end{itemize} 
+		\end{itemize} 
+\end{itemize}
+
+%-------------------------- Part 3 --------------------------%
+\section{\textbf{Feature Extraction}}
+
+\noindent
+
+\begin{itemize}
+	\item Bit patterns have no meaning until assigned by programmer
+		\begin{itemize}
+			\item A bit pattern can be an integer, floating point value, 4 or 8 character string, etc.
+		\end{itemize}
+	\item Write code to treat a given value as each of these things
+	\item For a given bit pattern, write code capable of answering following questions:
+		\begin{itemize}
+			\item If the value is treated as a double, what is the mantissa?
+			\item If the value is treated as a double, what is the sign?
+			\item If the value is treated as a double, what is the exponent?
+			\item If the value is treated as a long, what is the value?
+			\item If the value is treated as a long, what is the sign?
+			\item If the value is treated as 8 characters, what are they?
+		\end{itemize}
+	\item Write code that would print out answers to all above questions. Include enough information to determine which question being answered, and ensure answer easily interpreted
+	\item For each of these, need to treat a single value as if multiple values
+		\begin{itemize}
+			\item One way, is to type cast a struct that has same amount of storage as type interested in
+			\item Another approach is to make use of a union
+		\end{itemize}
+\end{itemize}
+
+\iffalse
+\newpage
+
+\begin{thebibliography}{1}
+
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{url}
+
+\end{thebibliography}
+\fi
+
+\end{document}
+

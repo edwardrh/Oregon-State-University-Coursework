@@ -1,0 +1,53 @@
+- Trantula not very hard
+- Can you the C library QuickSort
+- Design general purpose C generation tool is the hardess per se
+- Standardizes it in C, and do Delta Debugging wouldn't be too
+  hard, but pervious is the hardess
+- There's a C mutation tool in Github you can use
+- In the bug report of grading other people's:
+	- A short description
+	- How to trigger the bug
+	- Priority/Severity
+	- Anything else that would be done in a report, professionally
+- Model Checker was a useful testing technique
+	- Different from Quick Check (Pascal/Python/Java?/C?)
+		- Known for functionally languages
+- Do you think you know how to test stuff better? Debugging?
+	- Course learning in this class, learned on own
+	- Concepts, ways of learning, styles of thinking, etc.
+- Should have learned:
+	- What a unit test is
+	- Coverage
+	- Mutation
+	- Random Testing
+- Testing you can get away with a lot of things, sloppyness
+	- As long as you find the bug!
+- Aglie --> "Half Ass" vs Waterfall
+- Economic side of testing is a big part in the industry
+- Bugzilla
+- All bugs will never be resolved/detected, unless someone
+  develops a velry strong AI or something like that
+- Last class, I learned Alx Groce always has something to say, haha
+	- Relavent, but a lot of it
+	- Also with opinions of his own along with facts
+	- Every class feels like a conversation
+- 3b of trantula testing with gov:
+	- Writing a test pass/fail
+	- Writing coverage to get covered
+	- And then you score what being covered
+	- When do random testing and all fails, might because
+	  not a lot of code gets covered
+	- Have to make sure you have passing test
+	- You can focus it on one card and see if that single line
+	  fails or several
+		- Better way of testing here
+	- Doesn't work well when there's a whole different bugs
+	- Better when focused on selected portion of the code
+	- Interesting though to see how it work with the whole program
+- Using Delta Debugging, search on Google, website that looks like
+  just a lot of text with steps, etc.
+	- "Step 5: Incoke Delta Debugging"
+- You can build a fake instrument that returns all the data
+- Part 4 of the Project:
+	- What works? What works better? Doesn't??
+	- Possible cleaning up how coins are used

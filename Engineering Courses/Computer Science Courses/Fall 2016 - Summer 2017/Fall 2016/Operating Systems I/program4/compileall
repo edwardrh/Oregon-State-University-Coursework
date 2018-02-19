@@ -1,0 +1,37 @@
+#!/bin/bash
+gcc -o otp_enc_d otp_enc_d.c
+gcc -o otp_enc otp_enc.c
+gcc -o otp_dec_d otp_dec_d.c
+gcc -o otp_dec otp_dec.c
+gcc -o keygen keygen.c
+
+# Program Overview:
+# - Creating 5 small programs, that encrypt and decrypt information
+#   using a one-time pad-like system
+# - Combine multi-processing code with socket-based
+#   with socket-based inter-process communication (link provided)
+# - Be accessible from command line using standard UNIX features
+#   like input/output redirection and job control
+# - Write a short compilation script
+
+# Specifications:
+# Definitions:
+# - Plaintext: Information that you wish to encrypt and protect.
+#              Human readable.
+# - Ciphertext: The plaintext after it has been encrypted by your programs.
+#               Not human readable,
+#               cannot be cracked if the OTP system is used correctly
+# - Key: Random sequence of characters used to convert.
+#        Plaintext to ciphertext and back again.
+#        Must not be re-used, because encryption be in danger
+#        of being broken
+#
+# - 27 characters = 26 capital letters and space characters ()
+#   modulo 27 operations
+#   [encrypted and decryted as explained in the assignment description]
+#
+#- 5 small programs in C
+#  2 will function like "daemons" (but not acutally really)
+#  - Accessed using network sockets
+#  2 use the daemon to preform work
+#  1 standalone utility

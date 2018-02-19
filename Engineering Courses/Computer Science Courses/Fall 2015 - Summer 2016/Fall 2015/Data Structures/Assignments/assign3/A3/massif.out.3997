@@ -1,0 +1,503 @@
+desc: (none)
+cmd: a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=513556
+mem_heap_B=72072
+mem_heap_extra_B=48048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 72072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 72000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 72000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=2
+#-----------
+time=859043
+mem_heap_B=166248
+mem_heap_extra_B=110832
+mem_stacks_B=0
+heap_tree=detailed
+n2: 166248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 166176 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 166176 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 166176 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=3
+#-----------
+time=1374582
+mem_heap_B=254808
+mem_heap_extra_B=169872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2139194
+mem_heap_B=360072
+mem_heap_extra_B=240048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 360072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 360000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 360000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 360000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=5
+#-----------
+time=2750353
+mem_heap_B=526704
+mem_heap_extra_B=351136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3512697
+mem_heap_B=734616
+mem_heap_extra_B=489744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=4302036
+mem_heap_B=744072
+mem_heap_extra_B=496048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 744072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 744000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 744000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 744000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=8
+#-----------
+time=4861011
+mem_heap_B=896472
+mem_heap_extra_B=597648
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=5459939
+mem_heap_B=1059816
+mem_heap_extra_B=706544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=5899235
+mem_heap_B=1179624
+mem_heap_extra_B=786416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1179624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1179552 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 1179552 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 1179552 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=11
+#-----------
+time=6338531
+mem_heap_B=1299432
+mem_heap_extra_B=866288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=7107299
+mem_heap_B=1509096
+mem_heap_extra_B=1006064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=8624878
+mem_heap_B=1512072
+mem_heap_extra_B=1008048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1512072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1512000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 1512000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 1512000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=14
+#-----------
+time=9064173
+mem_heap_B=1631832
+mem_heap_extra_B=1087888
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=9558381
+mem_heap_B=1766616
+mem_heap_extra_B=1177744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=10332781
+mem_heap_B=1977816
+mem_heap_extra_B=1318544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=11107181
+mem_heap_B=2189016
+mem_heap_extra_B=1459344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=11881581
+mem_heap_B=2400216
+mem_heap_extra_B=1600144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=12268781
+mem_heap_B=2505816
+mem_heap_extra_B=1670544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=12655981
+mem_heap_B=2611416
+mem_heap_extra_B=1740944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=13043181
+mem_heap_B=2717016
+mem_heap_extra_B=1811344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=13430381
+mem_heap_B=2822616
+mem_heap_extra_B=1881744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=13817581
+mem_heap_B=2928216
+mem_heap_extra_B=1952144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=14204781
+mem_heap_B=3033816
+mem_heap_extra_B=2022544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=17267720
+mem_heap_B=3048072
+mem_heap_extra_B=2032048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 3048072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3048000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 3048000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 3048000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=26
+#-----------
+time=17945319
+mem_heap_B=3232824
+mem_heap_extra_B=2155216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=18332519
+mem_heap_B=3338424
+mem_heap_extra_B=2225616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=18719719
+mem_heap_B=3444024
+mem_heap_extra_B=2296016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=19106919
+mem_heap_B=3549624
+mem_heap_extra_B=2366416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 3549624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3549552 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 3549552 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 3549552 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=30
+#-----------
+time=19494119
+mem_heap_B=3655224
+mem_heap_extra_B=2436816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=19881319
+mem_heap_B=3760824
+mem_heap_extra_B=2507216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=20268519
+mem_heap_B=3866424
+mem_heap_extra_B=2577616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=20655719
+mem_heap_B=3972024
+mem_heap_extra_B=2648016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=21042919
+mem_heap_B=4077624
+mem_heap_extra_B=2718416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4077624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4077552 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 4077552 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 4077552 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=21430119
+mem_heap_B=4183224
+mem_heap_extra_B=2788816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=21817319
+mem_heap_B=4288824
+mem_heap_extra_B=2859216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=22204519
+mem_heap_B=4394424
+mem_heap_extra_B=2929616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=22591719
+mem_heap_B=4500024
+mem_heap_extra_B=3000016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=22978919
+mem_heap_B=4605624
+mem_heap_extra_B=3070416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4605624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4605552 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 4605552 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 4605552 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=40
+#-----------
+time=23366119
+mem_heap_B=4711224
+mem_heap_extra_B=3140816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=23753319
+mem_heap_B=4816824
+mem_heap_extra_B=3211216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=24140519
+mem_heap_B=4922424
+mem_heap_extra_B=3281616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=24527719
+mem_heap_B=5028024
+mem_heap_extra_B=3352016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=24914919
+mem_heap_B=5133624
+mem_heap_extra_B=3422416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 5133624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5133552 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 5133552 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 5133552 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=45
+#-----------
+time=25302119
+mem_heap_B=5239224
+mem_heap_extra_B=3492816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=25689319
+mem_heap_B=5344824
+mem_heap_extra_B=3563216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=26076519
+mem_heap_B=5450424
+mem_heap_extra_B=3633616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=26463719
+mem_heap_B=5556024
+mem_heap_extra_B=3704016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=27044519
+mem_heap_B=5714424
+mem_heap_extra_B=3809616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=27390007
+mem_heap_B=5808648
+mem_heap_extra_B=3872432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=27735495
+mem_heap_B=5902872
+mem_heap_extra_B=3935248
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=28080983
+mem_heap_B=5997096
+mem_heap_extra_B=3998064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=28426471
+mem_heap_B=6091320
+mem_heap_extra_B=4060880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=34550926
+mem_heap_B=6120072
+mem_heap_extra_B=4080048
+mem_stacks_B=0
+heap_tree=peak
+n2: 6120072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6120000 0x4008EB: addFrontList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+  n1: 6120000 0x400AB2: addList (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+   n0: 6120000 0x400BDC: main (in /nfs/stak/students/e/edwardrh/CS261/Assignments/assign3/A3/a.out)
+ n0: 72 in 3 places, all below massif's threshold (01.00%)

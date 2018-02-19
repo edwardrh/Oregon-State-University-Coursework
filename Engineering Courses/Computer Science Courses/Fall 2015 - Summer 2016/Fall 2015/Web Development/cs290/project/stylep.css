@@ -1,0 +1,100 @@
+﻿body {
+  background-image: url("images/mainback.jpg");
+  margin-left: 5%;
+  margin-right: 5%;
+}
+nav {
+  text-align: center;
+  font-family: Cambria;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: Khaki; 
+  padding: 15px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 100px;
+}
+a {
+  color: DarkSlateGray;
+  text-decoration: none;
+}
+a:hover {
+  color: Coral;
+}
+button {
+  border-radius: 28px;
+  font-family: Cambria;
+  color: Khaki;
+  font-size: 18px;
+  background: DimGray;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none;
+}
+button:hover {
+  background: White;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: PaleGoldenRod;
+  padding: 20px;
+  border-radius: 100px;
+  color: DarkSlateGray;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  background-color: PaleGoldenRod;
+  padding: 20px;
+  border-radius: 100px;
+  color: DarkSlateGray;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+#slideshow {
+  color: DarkSlateGray;
+  overflow: hidden;
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+#slideshow img {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 320px;
+  float: left;
+}
+fieldset {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  background-color: PaleGoldenRod;
+  padding: 20px;
+  border-radius: 100px;
+  color: DarkSlateGray;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+table {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  background-color: PaleGoldenRod;
+  padding: 20px;
+  border-radius: 100px;
+  color: DarkSlateGray;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}

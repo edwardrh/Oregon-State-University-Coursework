@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Table, Lists, and Forms</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <table>
+		<caption>Name that Colored Item!</caption>
+		<thead>
+			<tr>
+				<th></th> <!-- Upper left cell empty, rest filled -->
+				<th>Red</th>
+				<th>Orange</th>
+				<th>Green</th>
+				<th>Blue</th>
+				<th>White</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="2">Go Beavs!</td>
+				<td colspan="4">Course: Web Development</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr class="yellow">
+				<th>Let</th>
+				<td>Apples</td>
+				<td>Oranges</td>
+				<td>Celery</td>
+				<td>Blueberries</td>
+				<td>Eggs</td>
+			</tr>
+			<tr class="purple">
+				<th>The</th>
+				<td>Firetruck</td>
+				<td>Taxi</td>
+				<td>Train</td>
+				<td>Airplane</td>
+				<td>Ambulance</td>
+			</tr>
+			<tr class="yellow">
+				<th>Color</th>
+				<td>Roses</td>
+				<td>Lilies</td>
+				<td>Leaves</td>
+				<td>Sky</td>
+				<td>Clouds</td>
+			</tr>
+			<tr class="purple">
+				<th>Games</th>
+				<td>Pen</td>
+				<td>Pencil</td>
+				<td>Eraser</td>
+				<td>Post-It Note</td>
+				<td>Stapler</td>
+			</tr>
+			<tr class="yellow">
+				<th>Begin!</th>
+				<td>Pink</td>
+				<td>Gold</td>
+				<td>Forest</td>
+				<td>Indigo</td>
+				<td>Cream</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<ul>
+		<li>Eggs</li>
+		<li>Milk</li>
+		<li>Bread</li>
+	</ul>
+	
+	<ol>
+		<li>Eat</li>
+		<li>Sleep</li>
+		<li>Repeat</li>
+	</ol>
+	
+	<dl>
+		<dt>Name</dt>
+		<dd>Rhea Mae Edwards</dd>
+		<dt>Major</dt>
+		<dd>Computer Science, Computer Systems</dd>
+		<dt>Class Standing</dt>
+		<dd>Senior</dd>
+	</dl>
+	
+	<div class="outer-content">
+		<div class="inner-content">
+			Pink and Blue!!!
+		</div>
+	</div>
+	
+	<br />
+	
+	<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+		<fieldset>
+			<legend>Candy Records (POST)</legend>
+			<label> Your Name:
+				<input type="text" name="text_input">
+			</label>
+			<br />
+			<label> Age:
+				<input type="number" name="numerical_input">
+			</label>
+			<br />
+			<label> Secret Code (i.e. password):
+				<input type="text" name="password">
+			</label>
+			<br />
+			<p> If you can have an unlimited amount of any candy named below, what will it be?
+				<br />
+				<label>
+					<input type="radio" name="candy" value="snickers">Snickers</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="skittles">Skittles</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="mentos">Mentos</label>
+			</p>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	
+	<br />
+	
+	<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+		<fieldset>
+			<legend>Candy Records (GET)</legend>
+			<label> Your Name:
+				<input type="text" name="text_input">
+			</label>
+			<br />
+			<label> Age:
+				<input type="number" name="numerical_input">
+			</label>
+			<br />
+			<label> Secret Code (i.e. password):
+				<input type="text" name="password">
+			</label>
+			<br />
+			<p> If you can have an unlimited amount of any candy named below, what will it be?
+				<br />
+				<label>
+					<input type="radio" name="candy" value="snickers">Snickers</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="skittles">Skittles</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="mentos">Mentos</label>
+			</p>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+  </body>
+</html>

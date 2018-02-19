@@ -1,0 +1,21 @@
+﻿#first {
+  background-image: url("images/hawaii.jpg");
+}
+body {
+  background-image: url("images/photo.jpg");
+}
+nav {
+  text-align: center;
+  margin: 20px;
+  font-family: Cambria;
+  font-size: 18px;
+  font-weight: 400;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+}

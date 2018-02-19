@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF=8">
+		<title>Ajax Interactions</title>
+	</head>
+	<body>
+	<h1>Ajax Interactions</h1>
+	<h2>What's the Weather?</h2>
+	<form>
+		<fieldset>
+			<legend>Search By <strong>Location</strong></legend>
+			<label for="city">[City, State] </label>
+			<input type="text" name="city" id="city">
+			<input type="submit" id="citySubmit">
+		</fieldset>
+	</form>
+	<br>
+	<form>
+		<fieldset>
+			<legend>Search By <strong>Zipcode</strong></legend>
+			<label for="zip">[#####] </label>
+			<input type="text" name="zip" id="zip">
+			<input type="submit" id="zipSubmit">
+		</fieldset>
+	</form>
+	<div>
+		<h3>Weather Results:</h3>
+		<span>Temperature: </span><span id="temp"></span>
+			<ul>
+				<li><span>Minimum: </span><span id="min"></span></li>
+				<li><span>Maximum: </span><span id="max"></span></li>
+			</ul>
+		<span>Humidity: </span><span id="hum"></span>
+	</div>
+	<h2>Second Form</h2>
+	<form>
+		<fieldset>
+			<legend>The Second Form</legend>
+			<label for="second"></label>
+			<input type="text" name="second" id="second">
+			<input type="submit" id="secondSumbit">
+		</fieldset>
+	</form>
+	<div>
+		<h3>Second Form Results:</h3>
+		<span id="secondResults"></span>
+	</div>
+	<script src="ascript.js"></script>
+	</body>
+</html>

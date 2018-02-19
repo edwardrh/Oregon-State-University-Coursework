@@ -1,0 +1,229 @@
+  1 /***************************************************************************************************
+  2  * Program: roman.cpp
+  3  * Author: Rhea Mae Edwards
+  4  * Date: 2/14/2015
+  5  * Discription: This program converts roman numerals into decimals and decimals into roman numerals.
+  6  * Inputs: String of Characters, Integers
+  7  * Outputs: Integers, String of Characters
+  8  **************************************************************************************************/
+  9
+ 10 #include <iostream>
+ 11 #include <string>
+ 12
+ 13 using namespace std;
+ 14
+ 15 void get_user_inpu(string &romans, int &dec){
+ 16
+ 17    cout << "Enter a string in roman numerals: ";
+ 18    cin >> romans;
+ 19
+ 20    cout << "Enter a number to be converted into a roman numeral: ";
+ 21    cin >> dec;
+ 22
+ 23    return;
+ 24 }
+ 25
+ 26 void m(string &romans, int &total){
+ 27
+ 28    int x;
+ 29
+ 30    total = 0;
+ 31    for (x = 0; x <= romans.length() - 1; x++){
+ 32       if(romans[x] == 'M'){
+ 33          if(romans[x-1] == 'C'){
+ 34             total += 900;
+ 35          }
+ 36          else{
+ 37             total += 1000;
+ 38          }
+ 39       }
+ 40    }
+ 41
+ 42    return;
+ 43 }
+ 44
+ 45 void d(string &romans, int &total){
+ 46
+ 47    m(romans, total);
+ 48
+ 49    int x;
+ 50
+ 51    for (x = 0; x <= romans.length() - 1; x++){
+ 52       if(romans[x] == 'D'){
+ 53          if(romans[x-1] == 'C'){
+ 54             total += 400;
+ 55          }
+ 56          else{
+ 57             total += 500;
+ 58          }
+ 59       }
+ 60    }
+ 61
+ 62    return;
+ 63 }
+ 64
+ 65 void c(string &romans, int &total){
+ 66
+ 67    d(romans, total);
+ 68
+ 69    int x;
+ 70
+ 71    for (x = 0; x <= romans.length() - 1; x++){
+ 72       if(romans[x] == 'C'){
+ 73          if(romans[x-1] == 'X'){
+ 74             total += 90;
+ 75          }
+ 76          else{
+ 77             total += 100;
+ 78          }
+ 79       }
+ 80    }
+ 81
+ 82    return;
+ 83 }
+ 84
+ 85 void l(string &romans, int &total){
+ 86
+ 87    c(romans, total);
+ 88
+ 89    int x;
+ 90
+ 91    for (x = 0; x <= romans.length() - 1; x++){
+ 92       if(romans[x] == 'L'){
+ 93          if(romans[x-1] == 'X'){
+ 94             total += 40;
+ 95          }
+ 96          else{
+ 97             total += 50;
+ 98          }
+ 99       }
+100    }
+101
+102    return;
+103 }
+104
+105 void x(string &romans, int &total){
+106
+107    l(romans, total);
+108
+109    int x;
+110
+111    for (x = 0; x <= romans.length() - 1; x++){
+112       if(romans[x] == 'X'){
+113          if(romans[x-1] == 'I'){
+114             total += 9;
+115          }
+116          else{
+117             total += 10;
+118          }
+119       }
+120    }
+121
+122    return;
+123 }
+124
+125 void v(string &romans, int &total){
+126
+127    x(romans, total);
+128
+129    int x;
+130
+131    for (x = 0; x <= romans.length() - 1; x++){
+132       if(romans[x] == 'V'){
+133          if(romans[x-1] == 'I'){
+134             total += 4;
+135          }
+136          else{
+137             total += 5;
+138          }
+139       }
+140    }
+141
+142    return;
+143 }
+144
+145 void i(string &romans, int &total){
+146
+147    v(romans, total);
+148
+149    int x;
+150
+151    for (x = 0; x <= romans.length() - 1; x++){
+152       if(romans[x] == 'I'){
+153          total += 1;
+154       }
+155    }
+156
+157    return;
+158 }
+159
+160 void rom_to_dec(string &romans, int &total){
+161
+162    i(romans,total);
+163
+164    cout << total << endl;
+165
+166    return;
+167 }
+168
+169 void z(int &dec){
+170
+171    while(dec >= 1000){
+172       dec -= 1000;
+173       cout << 'M';
+174    }
+175    while(dec >= 900){
+176       dec -= 900;
+177       cout << 'C';
+178       cout << 'M';
+179    }
+180    return;
+181 }
+182
+183 void y(int &dec){
+184
+185    z(dec);
+186
+187    while(dec >= 500){
+188       dec -= 500;
+189       cout << 'D';
+190    }
+191    while(dec >= 400){
+192       dec -= 400;
+193       cout << 'C';
+194       cout << 'D';
+195    }
+196    return;
+197 }
+198
+199 void x(int &dec){
+200
+201    y(dec);
+202
+203    while(dec >= 100){
+204       dec -= 100;
+205       cout << 'C';
+206    }
+207    while(dec >= 90){
+208       dec -= 90;
+209       cout << 'X';
+210       cout << 'C';
+211    }
+212    return;
+213 }
+214
+215 void w(int &dec){
+216
+217    x(dec);
+218
+219    while(dec >= 50){
+220       dec -= 50;
+221       cout << 'L';
+222    }
+223    while(dec >= 40){
+224       dec -= 40;
+225       cout << 'X';
+226       cout << 'L';
+227    }
+228
+229    return;

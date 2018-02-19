@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+   <!--
+      Name: Rhea Mae Edwards
+	  Date: October 27th, 2015
+	  Filename: rockPaperScissors.html
+   -->
+   <head>
+      <title>Rock, Paper, Scissors</title>
+	  <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+	  <nav>
+	     <a href="../index.html">Home</a> &nbsp; &nbsp;
+		 <a href="../about/about.html">About Me</a> &nbsp; &nbsp;
+		 <a href="../assignments/assignments.html">Assignments</a> &nbsp; &nbsp;
+		 <a href="../project/project.html">Project</a> &nbsp; &nbsp;
+	  </nav>
+	  <h1>Rock, Paper, Scissors</h1>
+	  <p>
+		How to Play:<br>
+		In order to win a round of Rock, Paper, Scissors, you must choose the dominate
+		object of two being played.<br>
+		Rock dominates Scissors<br>
+		Paper dominates Rock<br>
+		Scissors dominates Paper<br>
+		For every round played, the player who wins that round gets a point added to
+		their overall score. Ties and loses have no affect on the players score.
+	  </p>
+	     <table>
+			<tr>
+				<th>Rock, Paper, or Scissors?</th>
+				<th>Computer Chooses...</th>
+			</tr>
+			<tr>
+				<td>
+				<button type="button" onclick="compare(rock, choice2)">Rock</button>
+				<button type="button" onclick="compare(paper, choice2)">Paper</button>
+				<button type="button" onclick="compare(scissors, choice2)">Scissors</button>
+				</td>
+				<th>.  .  .  .  .  .</th>
+			</tr>
+			<tr>
+				<td>
+					<img id="default1" src="images/start.png" alt="default" width="400" style="display:visible;">
+					<img id="rock1" src="images/rock.png" alt="rock" width = "400" style="display:none;">
+					<img id="paper1" src="images/paper.png" alt="paper" width = "400" style="display:none;">
+					<img id="scissors1" src="images/scissors.png" alt="scissors" width = "400" style="display:none;">
+				</td>
+				<td>
+					<img id="default2" src="images/start.png" alt="default" width="400" style="display:visible;">
+					<img id="rock2" src="images/rock.png" alt="rock" width = "400" style="display:none;">
+					<img id="paper2" src="images/paper.png" alt="paper" width = "400" style="display:none;">
+					<img id="scissors2" src="images/scissors.png" alt="scissors" width = "400" style="display:none;">
+				</td>
+			</tr>
+		 </table>
+		 <p id="round_result">Let's Play!</p>
+		 <div>
+			<h2>Score Board:</h2>
+			<h3>Your Score:</h3>
+			<p id="user_score">0</p>
+			<h3>Computer Score:</h3>
+			<p id="computer_score">0</p>
+		 </div>
+	  <footer>
+      <hr>
+      </footer>
+	  <script type="text/JavaScript" src="rps.js"></script>
+   </body>
+</html>
