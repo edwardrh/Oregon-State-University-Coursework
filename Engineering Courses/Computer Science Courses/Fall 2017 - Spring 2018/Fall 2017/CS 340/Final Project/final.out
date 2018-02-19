@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Project Plans}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Database Outline}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Entities}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Relationships}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{ER Diagram}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Schema}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Queries}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Data Definition Queries}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Data Manipulation Queries}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Insertion Queries}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Drop Queries}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Selection Queries}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Deletion Queries}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Update Queries}{subsection.3.2}% 15

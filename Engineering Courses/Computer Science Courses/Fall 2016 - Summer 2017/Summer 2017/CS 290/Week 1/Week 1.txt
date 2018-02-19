@@ -1,0 +1,11 @@
+Web Architecture OVerview Activity:
+
+Facebook Home Page - Client Side
+1) Display of the Search Bar above
+2) Section to post near the top of the page
+3) Links highlighted when mouse hovers over them
+
+Facebook Home Page - Server Side
+1) Information viewed throughout the feed
+2) Who is currently online 
+3) Ads displayed throughout the site
