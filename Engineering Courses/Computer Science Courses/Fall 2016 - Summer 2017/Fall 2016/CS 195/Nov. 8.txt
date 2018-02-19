@@ -1,0 +1,9 @@
+Week 7: Plan
+Week 8, 9, 10: Develop (Design/Code/Content)
+Week 10: Launch Party
+Week 11 (Final): Peer Review
+
+The plan.php file is NOT the website.
+The website in a prototype.
+- It does NOT require you purchase a 
+  domain name or hosting account.

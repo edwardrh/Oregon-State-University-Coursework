@@ -1,0 +1,28 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">    
+
+
+<h1>Hello CS 361</h1>
+<h3>Congratulations to everyone who has run the project successfully!</h3>
+
+    <ul id="users">
+    </ul>
+
+
+    <script>
+
+$.getJSON( "/ranSuccessfully.json", function( usersList ) {
+
+$.each(usersList.persons, function( key, value ) {
+$('#users').append("<li><b>Name:</b> "+value.name+"  <b>GitHub:</b> "+value.githubUserName+" <b>OS:</b> "+value.os+"</li>");
+});
+
+
+});
+
+
+</script>
+
+
+
+</@layout.myLayout>

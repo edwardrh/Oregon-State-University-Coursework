@@ -1,0 +1,84 @@
+doctype
+html 
+head
+    php variables
+        var sitename
+        var slogan
+        var sitepath
+        var author
+    title
+    meta
+        charset
+        viewport
+        description
+        author
+        keywords
+        robots
+    links
+        css
+        fonts
+        favicon
+    scripts
+        modernizer
+/head
+body
+main
+    header
+        image logo
+        headline 1 author
+        slogan
+    /header
+    nav
+        unordered list
+    /nav
+    section about me
+         headline 1 about 
+         aside 
+            paragraph about author
+            figure
+                image
+                figcaption
+            /figure
+            audio about author or music selection
+         /aside
+         headline 2 contact
+         address 
+            meta data
+            form contact
+            social media icons a img
+         /address
+     /section
+    article education
+        headline 2
+        dl list
+    /article
+    article work
+       headline 2
+       dl list
+    /article
+    article service
+       headline 2
+       dl list
+       iframe, video
+    /article
+    article skills
+        headline 2
+        table of skills and proficiency
+    /article
+    article fun
+       headline 2
+       figure gallery 
+          img
+          figcaption
+       /figure
+    /article
+    footer
+       copyright with date
+    /footer
+/main
+scripts
+    jquery
+    prefix-free
+    google analytics
+/body
+/html

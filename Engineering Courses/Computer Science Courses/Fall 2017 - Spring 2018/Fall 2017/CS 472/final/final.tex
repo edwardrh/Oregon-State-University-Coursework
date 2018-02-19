@@ -1,0 +1,183 @@
+\documentclass[letterpaper,10pt,onecolumn,compsoc]{IEEEtran}
+%draftclsnofoot
+
+\usepackage{hyperref}
+\usepackage{geometry}
+%\usepackage{tocloft}
+\usepackage{color}
+\usepackage[normalem]{ulem}
+
+\geometry{margin=0.75 in}
+
+\setlength{\parskip}{1em}
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+\title{-\\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\UNIVAC, CDC 6600 \uline{vs} ARM\\A Match of Existence}
+\author{Rhea Mae V. Edwards\\ ~ \\CS 472\\Fall 2017}
+
+%-- "Tell me what you want to tell me, and then stop writing" --%
+
+\begin{document}
+
+%-------------------------- Title Page --------------------------%
+
+\maketitle
+
+\newpage
+
+%-------------------------- Table of Contents --------------------------%
+
+\tableofcontents
+
+\newpage
+
+%-------------------------- Body of Paper --------------------------%
+
+\section{Introduction}
+
+\noindent
+From a programmer's view, there are many similarities and differences between many computer architectures that have been developed throughout the years. This paper will discuss a handful of those many similarities and differences between two computer architectures, the Advanced RISC (Reduced Instruction Set Computer) Machine (ARM) versus the Universal Automatic Computer (UNIVAC), Control Data Corporation (CDC) 6600 series [1][2]. Such similarities and differences can include, but not limited to, "the processor's power, performance and area by determining the pipeline length, levels of cache" and more [3]. Overall, the purpose for all of these varying architectures are pretty much the same, being the basis of it all within a computer, but the story of how these architecture designs go on in reaching that common purpose, is the where such unique creativity shows.
+
+\subsection{ARM Architecture}
+
+\noindent
+The ARM architecture is found in every ARM processor, where its a "uniform register file load/store architecture, where data processing  operates only on register contents, [and] not directly on memory contents". This architecture is more modern being built with transistors. In addition, such an architecture is represented to be more broad in its range of performance, being more efficient and advanced with its implementations and techniques. "Implementation size, performance, and low power consumption" are attributes of the ARM architecture of what it better represents. [4]
+
+\subsection{UNIVAC, CDC 6600 Architecture}
+
+\noindent
+The UNIVAC, CDC 6600 series architecture is considered more of a historical device, where its first origins data back into 1965. This architecture are built also with transistors and employing the ones-complement concept, which dates back to its previous integrate creations back more than 30 years into the past. Speaking more about the CDC 6600 past, its successor of the CDC 1604 is known to be "one of the first commercial transistor-based computers" and "fastest machines on the market," and in relation to the CDC 6600, being greatly known for in regards to its existence. [2]
+
+\subsection{Similarities}
+
+\noindent
+Similarities these architectures share are their general implementation and considerations of the memory hierarchy and addressing of physical and logical memory. 
+
+\noindent
+In addition, the more well known and purposeful computer architectures were digital rather analog, in other words mechanical, in regards to their general structure of them. Even though the ARM architecture and the CDC 6600 architecture had their physical differences of the uses of transistors versus vacuum tubes, they were digital devices.
+
+\noindent
+The memory hierarchy consist of the levels of $L_1$ cache, $L_n$/LLC (Last Level Code) cache, main memory (RAM), and tertiary storage (hard drive), with the addition of registers before these stages. 
+
+\noindent
+Also, when it comes to paging and addressing of physical and logical memory with a system, the idea with their page tables are implemented similarly. 
+
+\subsection{Differences}
+
+\noindent
+Differences between the ARM architecture and the CDC 6600 architecture include their implementations of the concepts of a RISC designed architecture and "a ones-complement representation of integers" and their implementation of the CPU pipeline [2].
+
+\noindent
+In regards to the the ARM architecture, the implementation of "the RISC design philosophy" is used, whereas the CDC 6600 ended up employing "a ones'-complement representation of integers" [2]. More in regards to RISC designed architecture, there is more emphasizes on the software side where data processing moves from register-to-register, LOAD and STORE independent instructions [4]. 
+
+\newpage
+
+\noindent
+In addition, being somewhat related to this difference, more in relation to just the RISC architecture design itself, (Complex Instruction Set Computers) CISC architecture. Unlike RISC architecture's "low cycles per second, large code size, and spend[ing] more transistors on memory register," the CISC architecture has "small code sizes, high cycles per second, and" uses transistors for storing complex instructions instead. The CISC architecture also has more "emphasis on hardware" being more memory-to-memory with its LOAD and STORE incorporated instructions, along with multi-clock complex instructions whereas RISC architecture is single-clock with reduced instructions only. [4]
+
+\noindent
+In regards to the CPU pipeline, the execution follows with the same concept of parallelism. When it comes to a single instruction, there is a flow, starting with an instruction fetch for a single instruction, followed by decoding the instruction, fetching its correspond operands, executing the instruction, and finally storing those operands. Within the CPU pipeline, there is a form of overlap that more efficiently goes through these general instructions in general. Also, the option of running these processes are the use of p-threads within execution.
+
+\noindent
+There is the RISC I Pipeline that is more practiced by the CDC 6600 architecture, and the the RISC II Pipeline, also known as parallelism which is practiced by the ARM architecture. This difference show a variance in their development and implementations for their flow in flow control, affecting and displaying their performances overall.
+
+\subsection{Conclusion}
+
+\noindent
+When comparing the ARM architecture and UNIVAC, CDC  6600 architecture, there are similarities and differences that exist between the two, but the common goal of being the basis of a computing device, are met with both of these architectures. When it comes to flow control, physical and virtual memory storage, and how the architecture is constructed and processed in general, there is similar purpose for any of them.
+
+%	- What addressing modes are offered
+%	- How long are addresses
+%	- What's the minimum addressable unit in memory
+
+% Memory Hierarchy
+% CPU Pipeline
+% Parallelism
+% P-Threads
+
+% - Be able to apply what I learned about machine organization to unfamiliar machines
+
+% Main Point and Purpose: 
+% - Apply what you've learned in class to a new situation
+%  (Best way to solidify my knowledge)
+
+% Include the following topics, remember your audience, as you write, compare, and what you know:
+% - Introduction of architecture including history
+% - Instruction set design
+%	- Is it RISC/CISC
+%	- Etc.
+%	- In some of the above, will likely be talking about specific implementations of the architecture. Sufficient to focus on one implementation.
+		
+%---------------- Further Notes -----------------%
+
+% - Choose a computer architecture
+% - Compare and contrast that architecture to either ARM or IA
+
+% Example Topic Choices:
+%	- AMD Hammer
+%	- VAX
+%	- A historical machine
+%		- ENIAC 
+%		- EDSAC
+%		- IBM System/360
+%		- UNIVAC, CDC 6600
+%		- Intel 4004
+%		- Intel 8008
+%		- Intel 8080
+%	- PowerPC
+%	- SPARC
+%	- HP PA-RISC
+%	- DEC Alpha
+%	- Parallel machines 
+%		- SGI Origin
+%		- IBM RS/6000 SP
+%		- Cray X-MP/416
+
+% Contents and Form:
+% - Paper must be long as it needs to be
+% - Single-Spaced
+% - 10-pt font
+
+%-------------------------- References --------------------------%%
+
+\newpage
+
+\begin{thebibliography}{4}
+
+\bibitem{first}
+armDeveloper. (2017). 
+\textit{Arm CPU architecture} 
+. [Online]. Available: 
+\\\url{https://developer.arm.com/products/architecture/cpu-architecture}
+\\ ~ \\
+\bibitem{second}
+Revolvy. (2017). 
+\textit{CDC 6600} 
+. [Online]. Available: 
+\\\url{https://www.revolvy.com/main/index.php?s=CDC\% 206600&item_type=topic}
+\\ ~ \\
+\bibitem{third}
+armDeveloper. (2017). 
+\textit{Overview of The Arm Architecture} 
+. [Online]. Available: 
+\\\url{https://developer.arm.com/products/architecture/learn-about-the-arm-architecture}
+\\ ~ \\
+\bibitem{fourth}
+C. Chen, G. Novick, K. Shimano. (2000).
+\textit{RISC ARCHITECTURE} 
+. [Online]. Available: 
+\\\url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/}
+
+\end{thebibliography}
+
+\iffalse
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{url}
+\fi
+
+\end{document}
+

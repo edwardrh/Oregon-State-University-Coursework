@@ -1,0 +1,6 @@
+
+ERROR: 0:29: '&&' : wrong operand types no operation '&&' exists that takes a left-hand operand of type 'highp float' and a right operand of type 'highp float' (or there is no acceptable conversion)
+ERROR: 0:29: 'assign' :  cannot convert from 'const bool' to 'highp float'
+ERROR: 0:29: '=' : syntax error syntax error
+
+

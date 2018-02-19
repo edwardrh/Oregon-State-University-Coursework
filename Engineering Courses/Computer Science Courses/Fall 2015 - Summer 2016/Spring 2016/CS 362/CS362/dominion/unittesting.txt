@@ -1,0 +1,22 @@
+- Discuss unit testing efforts
+
+First off it came to creating the basic format/funtions
+for each unit test file within my directory.
+Then I had to personlize each test by choosing certian
+funtions to test in dominion.c.
+
+I ran out of time before midnight of the due date.
+I was unable to see if my files complied of the program.
+But some of the tests were writtened completed without
+actually using them by testing them.
+
+Predicting that if I had the chance to complie my unit
+tests on time, I may find issues/bugs in the original code,
+or even in my unit tests themselves.. 
+Predicting it would have come to more of a trial and 
+error type of situation overall.
+
+I learned that I really need to improve on my time
+management skills, in order to complete these
+assignments. I will complete this assignment eventually,
+soon, even I did not complete it on time.

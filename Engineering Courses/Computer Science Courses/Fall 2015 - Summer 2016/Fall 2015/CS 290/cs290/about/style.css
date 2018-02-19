@@ -1,0 +1,36 @@
+﻿body {
+  background-image: url("images/hawaii.jpg");
+}
+nav {
+  text-align: center;
+  margin: 20px;
+  font-family: Cambria;
+  font-size: 18px;
+  font-weight: 400;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+p {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+}
+table {
+  border: solid 3pt black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  text-align: center;
+  border: solid 2pt black;
+  padding: 5pt;
+}
+td {
+  text-align: center;
+  border: solid 2pt black;
+  padding: 5pt;
+  width: 168px;
+}

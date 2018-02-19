@@ -1,0 +1,30 @@
+Define colors in main.css
+Add class names to index.php
+	nav li a (underline)
+	section
+	aside
+	articles
+	footer
+Remove white and black class names from index.php
+Adjust  section a{color: ---;}
+	articles a{color: ---;}
+	footer a{color: ---;}
+
+address a, address a:link {color:#---!important;}
+
+chocolate
+armygreen
+creamcoffee
+hazelbrown
+mistyblue
+chocolate-bg
+armygreen-bg
+creamcoffee-bg
+hazelbrown-bg
+mistyblue-bg
+
+10/27/2016
+
+Page set UP 400px wide and tall
+Crop excess from pngs
+heaer{text-align: ---;}

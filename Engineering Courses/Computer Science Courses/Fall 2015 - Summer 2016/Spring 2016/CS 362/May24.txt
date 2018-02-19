@@ -1,0 +1,43 @@
+- diff-ing the test outputs
+- linked two dominion.c to generator for outputs
+- testing for similiarities and differs
+X = X or not
+- write diff dominion
+2) Write Code
+3) Talk About It
+- On first attempt, test with another dominion,
+  see how it goes with multiple
+- have tool, download how you want to, clone/copy
+- have parameters be full pathways, URL
+
+Classmate's Username: cuneob
+
+playdom: dominion.o lpaydom.c testdominion.c
+
+emacs
+rm -rf *.binary
+
+make dominion
+Makefile
+
+./testdominion 42 >& playdom3.output
+> & results.out
+
+compilemutants.py
+
+generating mutants...
+
+"feast" is the enemy --> Fix It
+ulimit -t 30 (Doesn't work all the time)
+
+Spider Monkey
+
+testdominion doesn't have terminate anything..
+diff tells you what is wrong
+
+different choices
+
+ls notkilled/ | wc -l
+la killed/ | wc -l
+
+strong tester with differential testing

@@ -1,0 +1,128 @@
+﻿  sample.cpp
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(76): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(78): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(81): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(82): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(83): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(97): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(98): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(102): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sphere.cpp(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(435): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(440): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(446): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(451): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(456): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(461): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(466): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(472): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(477): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(482): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(487): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(492): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(497): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(529): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(937): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(938): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(939): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(949): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(950): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(951): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(965): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(966): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(967): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(975): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(976): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(977): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(994): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(995): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(996): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1006): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1007): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1008): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1022): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1023): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1024): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1032): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1033): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1034): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1051): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1052): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1053): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1063): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1064): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1065): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1079): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1080): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1081): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1089): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1090): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1091): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1108): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1109): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1110): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1120): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1121): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1122): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1136): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1137): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1138): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1146): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1147): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1148): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1165): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1166): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1167): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1177): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1178): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1179): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1193): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1194): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1195): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1203): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1204): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1205): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1216): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1217): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1218): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1222): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1224): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1225): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1231): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1233): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1234): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1250): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1256): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1258): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1259): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1265): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1267): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1268): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1277): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1283): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1285): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1286): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1292): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1294): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1295): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1301): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1305): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1307): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1309): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1311): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1313): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1315): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1318): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1320): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1322): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1324): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1326): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1329): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1331): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1333): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1335): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\final\sample.cpp(1704): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+sample.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  Sample.vcxproj -> C:\Users\RheaMae\Documents\Oregon State University\Courses\Fall 2016\CS 450\Final\.\Debug\Sample.exe
+  Sample.vcxproj -> .\Debug/Sample.pdb (Full PDB)

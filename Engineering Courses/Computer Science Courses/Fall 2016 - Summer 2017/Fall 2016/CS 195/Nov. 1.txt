@@ -1,0 +1,15 @@
+Mobile:
+text-align: center
+logo must fit in 320px
+set margin and padding: 0
+
+Tablet:
+Side by Side
+
+Desktop - Animate
+
+For the Video/Movie:
+Less than 10 MB - Host it on ONID
+More than 10 MB - Host it on Youtube, etc.
+
+Pleasant (not jarring) sound effects, for navigation

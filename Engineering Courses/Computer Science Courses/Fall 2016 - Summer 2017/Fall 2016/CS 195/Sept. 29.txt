@@ -1,0 +1,3 @@
+id = "___" --> href = "#___"
+Anything inside the border = padding
+Anything outside the border = margin

@@ -1,0 +1,257 @@
+\documentclass[letterpaper,10pt,onecolumn,compsoc]{IEEEtran}
+%draftclsnofoot
+
+\usepackage{hyperref}
+\usepackage{geometry}
+%\usepackage{tocloft}
+\usepackage{color}
+
+\geometry{margin=0.75 in}
+
+\setlength{\parskip}{1em}
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+\title{-\\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ ~ \\ Assignment 3 Report}
+\author{Rhea Mae V. Edwards\\ ~ \\CS 472\\Fall 2017}
+
+\begin{document}
+
+%-------------------------- Title Page --------------------------%
+
+\maketitle
+
+\newpage
+
+%-------------------------- Table of Contents --------------------------%
+
+\tableofcontents
+
+\newpage
+
+%-------------------------- Part 1 --------------------------%
+\section{Page Calculations and Pipelining}
+
+\subsection{Calculations and Questions}
+
+\begin{enumerate}
+
+\item \textit{For a 4KB page, and a 32 bit address space, calculate the amount of memory needed to store a process's page tables. \\Assume each entry in the page table requires 10 bytes. Show all calculations.}
+\\ ~ \\
+For a 4KB page being a size of $2^{12}$, \\
+with an address space of 32-bit being $2^{32}$, \\
+$2^{32}/2^{12} = 2^{20}$ pages can be stored. \\
+With each entry in the page table requiring 10 bytes begin $2^{3} + 2^{1}$, \\
+The amount of memory needed to store a process's page tables is \\
+$2^{20}*(2^{3} + 2^{1}) = 2^{23} + 2^{21} = 10$MB in memory.
+
+\bigskip
+\item \textit{For a 4KB page, and a 64 bit address space, calculate the amount of memory needed to store a process's page tables. \\Assume each entry in the page table requires 10 bytes. Show all calculations.}
+\\ ~ \\
+For a 4KB page being a size of $2^{12}$, \\
+with an address space of 64-bit being $2^{64}$, \\
+$2^{64}/2^{12} = 2^{52}$ pages can be stored. \\
+With each entry in the page table requiring 10 bytes begin $2^{3} + 2^{1}$, \\
+The amount of memory needed to store a process's page tables is \\
+$2^{52}*(2^{3} + 2^{1}) = 2^{55} + 2^{53} = 40$PB in memory.
+
+\bigskip
+\item \textit{For a 8KB page, and a 32 bit address space, calculate the amount of memory needed to store a process's page tables. \\Assume each entry in the page table requires 10 bytes. Show all calculations.}
+\\ ~ \\
+For a 8KB page being a size of $2^{13}$, \\
+with an address space of 32-bit being $2^{32}$, \\
+$2^{32}/2^{13} = 2^{19}$ pages can be stored. \\
+With each entry in the page table requiring 10 bytes begin $2^{3} + 2^{1}$, \\
+The amount of memory needed to store a process's page tables is \\
+$2^{19}*(2^{3} + 2^{1}) = 2^{22} + 2^{20} = 5$MB in memory.
+
+
+\bigskip
+\item \textit{For a 8KB page, and a 64 bit address space, calculate the amount of memory needed to store a process's page tables. \\Assume each entry in the page table requires 10 bytes. Show all calculations.}
+\\ ~ \\
+For a 8KB page being a size of $2^{13}$, \\
+with an address space of 64-bit being $2^{64}$, \\
+$2^{64}/2^{13} = 2^{51}$ pages can be stored. \\
+With each entry in the page table requiring 10 bytes begin $2^{3} + 2^{1}$, \\
+The amount of memory needed to store a process's page tables is \\
+$2^{51}*(2^{3} + 2^{1}) = 2^{54} + 2^{52} = 20$PB in memory.
+
+
+\bigskip
+\item \textit{Describe the concept of pipelining, and why it is useful.}
+\\ ~ \\
+The concept of pipelining involves the process of reading and executing sets of instructions through a process. For a process, when one instruction has been executed at some point in the process, the next instruction follows, before the operation even has been fully preformed. Rather than waiting for one instruction to go through the entire process, with each instruction one at a time. 
+\\ ~ \\
+Practicing the practice of pipelining is useful, because the amount of time to complete a set of instructions to finish a process will be much shorter than not doing so. The process of piplining is more effective in a sense, because a process is achieving more in a shorter amount of time.
+
+\newpage
+
+\bigskip
+\item \textit{Describe the IA-32e paging structure, in detail.}
+\\ ~ \\
+The IA-32e paging structure is a way to organize memory addresses, from a virtual page to a physical page with the idea of page tables. Each physical address within a page table contains a number of virtual addresses. These virtual addresses are separated with the table to either hold the page number of to be the offset of the address.
+\\ ~ \\
+The typical organization of these page tables is a with a tree structure consisting of three levels. Theoretically, there can be a number of levels. The first level is the page global directory, the second being the page middle directory, and the third level contains the page table, where each page table contains physical addresses of page that each lead to a physical page. Also, depending on the size of a tree structure and its pages overall, there are different sizing names. 
+\\ ~ \\ 
+Since these page tables are hold memory, where do these page tables live? These page tables live or are held by the control register 3, where this register hold the pointer of the current process, being the base address for memory.
+
+\end{enumerate}
+
+%-------------------------- Part 2 --------------------------%
+\section{Memory Optimization and Cache}
+
+\subsection{Memory Optimization}
+
+%\href{run:./GDC03_Ericson_Memory_Optimization.pdf}{Memory Optimization Presentation}
+
+Memory Optimization Presentation
+
+\noindent
+Through the "Memory Optimization" presentation created my Christer Ericson of Sony Computer Entertainment of Santa Monica, memory optimization is a process practiced by the idea of cache-awareness which involves the formation of a memory hierarchy. Cache is directly mapped, where the memory hierarchy also consists of four levels: CPU (about 1 cycle), L1 Cache (about 1-5 cycles), L2 Cache (about 5-20 cycles), Main Memory (about 40-100 cycles). There are three mis-implementations of caches being compulsory misses, capacity misses, and conflict misses, which can be very problematic with its use. On contrary, rearranging (code, data), reduction (size, number of caches lines read), and reusing (cache lines) with such caches implementations. Monitoring and measuring the profile of the use of cache, involves the utilization of the practice, along with studying its generated code, locality, and size. There are a lot of stuff involving data cache optimization, such as "compressing" data, blocking and strip mining, padding data to align to caches lines, and more. Topics that the referred presentation discusses about are prefetching and preloading data into cache, cache-conscious structure layout, tree data structures, linearization caching, memory allocation, and aliasing and "anit-aliasing".
+
+\subsection{What Every Programmer Should Know About Memory}
+
+% Chapter 3
+
+\noindent
+\url{https://www.akkadia.org/drepper/cpumemory.pdf}
+
+\noindent
+In regards to Section 3, CPU Caches, of the paper "What Every Programmer Should Know About Memory" written by Ulrich Drepper, provides a detailed overview of data cache memory overall. Topics that the section CPU Caches goes over are titled as the following: CPU Caches in the Big Picture, Cache Operations at High Level, CPU Cache Implementation Details (regarding Associativity, Measurements of Cache Effects, Single Threaded Sequential Access, Single Threaded Random Access, Write Behavior, Multi-Processor Support, Multi-Threaded Access, Special Case: Hyper-Threads, and Other Details), Instruction Cache (regarding Self-Modifying Code), and Cache Miss Factors (regarding Cache and Memory Bandwidth, Critical Word Load, Cache Placement, and FSB Influence).
+
+\newpage
+
+%-------------------------- Part 3 --------------------------%
+
+% Implement some C code to calculate the cache sizes of any arbitrary processor. 
+% Use ideas presented in papers of Part 2.
+% Run code on flip, and determine the size and number of caches present.
+
+\section{Calculating Cache}
+
+\subsection{Implementation}
+
+\begin{itemize}
+	\item Implemented some C code to calculate the cache sizes of any arbitrary processor.
+	\item Used ideas presented in papers of Part 2.
+	\item Ran code on flip, and determined the size and number of caches present.
+\end{itemize}
+
+%-------------------------- Part 4 --------------------------%
+\section{Byte Swapping and Compiler Directive Implementation}
+
+\subsection{Description}
+
+\noindent
+The following program assumes big-endian memory architecture.
+
+
+\begin{itemize}
+	\item[•]
+	\begin{verbatim}
+	#include <stdio.h>
+
+	int main(int argc, char **argv)
+	{
+	\end{verbatim}
+	\begin{itemize}
+	\item[•]
+	\begin{verbatim}
+	short val;
+	char *p_val;
+	p_val = (char *) &val;
+	/*
+	  The following two lines assume big-endian
+	  Architecture to initialize the variable Val
+	  to 0x1234.
+	*/
+	p_val[0] = 0x12;
+	p_val[1] = 0x34;
+	printf("%x\n", val);
+	
+	return 0;
+	\end{verbatim}
+	\end{itemize}
+	\item[•]
+	\begin{verbatim}
+	}
+	\end{verbatim}
+\end{itemize}
+
+\noindent
+Byte swapping and compiler directive is used to modify the above code to transform the code to be endian-neutral.
+
+\subsection{Required Functionality}
+
+\noindent
+The code...
+
+\begin{itemize}
+	\item Initializes a short variable one byte at a time, to the value of 0x1234
+	\item Prints out the whole value in its natural data type
+\end{itemize}
+
+\noindent
+The endian-neutral code also prints out the same results whether the code is complied for and executed on big- or little-endian architecture.
+
+\subsection{Restrictions}
+
+\begin{itemize}
+	\item May not use the networking functions to perform this operation
+	\item Must write my own byte swapping macro
+	\item[•] \textit{Note: GCC define the BIG\_ ENDIAN macro for the user}
+\end{itemize}
+
+\newpage
+
+%-------------------------- Part 5 --------------------------%
+\section{Calculating Cache}
+
+\subsection{Description}
+
+\noindent
+This program is a modification from the program of section 4.0. The testing for the endianness of the system that the code is running on has the use of byte swapping and a runtime test (instead of compiler directive).
+
+\subsection{Required Functionality}
+
+\noindent
+The code...
+
+\begin{itemize}
+	\item Initializes a short variable one bute at a time, to the value of 0x1234
+	\item Prints out the whole value in its natural data type
+\end{itemize}
+
+\noindent
+The endian-neutral code prints out the same results whether the code is complied for and executed on big- or little-endian architecture.
+
+%-------------------------- Further Notes: --------------------------%
+
+% For both labs, the assumed byte ordering in the code is big endian. 
+% flip uses little-endian Intel chips, so writing code that outputs the correct values on flip is a solid first start. 
+% Swapping the direction of the checks and having the output be the same as the starting code shows big-endian correctness as well.
+
+%-------------------------- References --------------------------%
+
+\iffalse
+\newpage
+
+\begin{thebibliography}{1}
+
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{url}
+
+\end{thebibliography}
+
+\bibitem{first}
+F. Author. (year). 
+\textit{title} 
+. [Online]. Available: 
+\\\url{url}
+\fi
+
+\end{document}
+

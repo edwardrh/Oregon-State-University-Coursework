@@ -1,0 +1,35 @@
+﻿  sample.cpp
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\bmptotexture.cpp(51): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(76): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(78): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(81): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(82): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(83): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(100): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sphere.cpp(101): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(464): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(533): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(551): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(947): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1090): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1117): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1144): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1171): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1198): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1733): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1776): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1782): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1783): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1793): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1798): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1800): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1810): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1815): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 6\sample.cpp(1816): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+sample.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  Sample.vcxproj -> C:\Users\RheaMae\Documents\Oregon State University\Courses\Fall 2016\CS 450\Project 6\.\Debug\Sample.exe
+  Sample.vcxproj -> .\Debug/Sample.pdb (Full PDB)

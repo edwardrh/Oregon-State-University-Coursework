@@ -1,0 +1,118 @@
+#!/bin/bash
+
+#reading/checking command line arguments
+#stats {-rows|-cols} [input_file]
+
+#putting input file/data in a variable
+
+inputdata="./datainput";
+$2 > $inputdata$$;
+
+#conditional test
+
+datafilepath="datafile$$";
+if [ "$#" = "1" ];
+then
+   cat>"$datafilepath";
+elif [ "$#" = "2" ]
+then
+   datafilepath=$2;
+fi
+   
+#output when errors occurs
+
+result=$?;
+
+#when don't have the correct number of arguments (either 1 or 2)
+
+if [ $result -ne 0 ];
+then
+   echo "You have too many/few arguments." 1>&2;
+   echo "Exit Value: $result";
+fi
+
+#when formatting is incorrect in some way
+
+if [ $result -ne 0 ];
+then
+   echo "Formatting of your arguments is incorrect. \n(Proper Format: stats {-rows|-cols} [input_file] )" 1>&2;
+   echo "Exit Value: $result";
+fi
+
+#when inputted file is unreadable/incorrect format
+#when inputter file is empty, can just return error from this file
+
+if [ $result -ne 0 ];
+then
+   echo "Unable to read your inputted file." 1>&2;
+   echo "Exit Value: $result";
+fi
+
+#continuing with checking actual command line arguments
+
+if [[ $1 == -r* ]];
+then
+   echo "Calculating row stats..";
+elif [[ $1 == -c* ]];
+then
+   echo "Calculating column stats..";
+fi
+
+#trap command captures signals (for interruption purposes)
+#trap <code to execute> list of signals
+
+#calculating number of values (count) in each row/column
+
+count=0; #make a for loop to calculate this
+
+
+
+#for i in $inputdata$$
+#do
+   #count=$(expr $count+$i);
+#done
+#echo "Count: $count";
+
+#calculate sum of values of  rows/columns
+
+sum=0; #make for loop to calculate this
+
+cat $inputdata$$;
+while read num;
+do sum=$(expr $sum+$num);
+done < $inputdata$$;
+echo 'Sum:' $sum;
+
+#calculate the average by rows/columns
+
+num1=$(expr $count/2);
+num2=$(expr $sum+$int1);
+average=$(expr $int2/$count);
+
+#calulate the median by rows/columns
+#cut, sort, head, and tail
+
+tempfile=./tempfile;
+
+sort < $inputdata$$ > $tempfile$$;
+
+#remove all temporary files when stats program is done/at the end
+#Previously asks user before doing so..
+
+find . -regex './tempfile.*' -exec rm -i '{}' \;
+find . -regex './datainput.*' -exec rm -i '{}' \;
+
+#Notes:
+
+#chmod +x filename
+
+#exittest
+#ls
+#printf "result of ls: $?\n"
+#exit 5 or whatever..
+#echo $ //check error value
+
+#can return an error value with exit command
+
+#seeing ^M, try this command % dos2unix bustedFile
+#when grading occurs, line being used: $ p1gradingscript > p1results.edwardrh

@@ -1,0 +1,17 @@
+- Execute unit tests
+- Use gcov to measure code coverage for all tests
+
+- Describe any bugs
+- Report findings
+- Describe implications
+
+I ran out of time and limited resources to actually
+run my unit tests.
+I would predict that my tests would at least call each
+of the chosen funtions once, possible not covering a
+whole lot initially when the game is ran.
+
+I learned that I really need to improve on my time
+management skills, in order to complete these
+assignments. I will complete this assignment eventually,
+soon, even I did not complete it on time.

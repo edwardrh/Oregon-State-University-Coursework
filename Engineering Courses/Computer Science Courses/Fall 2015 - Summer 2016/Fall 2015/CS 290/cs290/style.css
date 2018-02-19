@@ -1,0 +1,23 @@
+﻿body {
+  background-image: url("images/hawaii.jpg");
+}
+nav {
+  text-align: center;
+  margin: 20px;
+  font-family: Cambria;
+  font-size: 18px;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+}
+section {
+  text-align: center;
+}

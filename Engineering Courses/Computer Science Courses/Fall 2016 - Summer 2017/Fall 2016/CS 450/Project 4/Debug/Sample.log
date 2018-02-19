@@ -1,0 +1,17 @@
+﻿  sample.cpp
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(422): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(759): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(760): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(761): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(770): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(780): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(781): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(783): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(791): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(806): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(807): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(817): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\rheamae\documents\oregon state university\courses\fall 2016\cs 450\project 4\sample.cpp(1202): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+sample.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  Sample.vcxproj -> C:\Users\RheaMae\Documents\Oregon State University\Courses\Fall 2016\CS 450\Project 4\.\Debug\Sample.exe
+  Sample.vcxproj -> .\Debug/Sample.pdb (Full PDB)
